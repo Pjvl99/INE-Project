@@ -13,3 +13,4 @@ prefs = {'download.default_directory' : download_dir}
 chrome_options.add_experimental_option('prefs', prefs)
 driver = webdriver.Chrome(options=chrome_options, service=Service(ChromeDriverManager().install()))
 driver.get("https://datos.ine.gob.gt")
+time.sleep(10)
