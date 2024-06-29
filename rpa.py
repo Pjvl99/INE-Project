@@ -26,7 +26,6 @@ class INE:
     
     def get_headers(self) -> None:
         headers = WebDriverWait(self.driver, 60).until(lambda header: header.find_elements(By.CSS_SELECTOR, '.dataset-heading > a'))
-        print(len(headers))
 
 
 
